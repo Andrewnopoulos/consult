@@ -244,6 +244,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#if-i-want-to-edit-the-github-pages-for-the-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      If I want to edit the github pages for the site:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#project-layout" class="md-nav__link">
     <span class="md-ellipsis">
       Project layout
@@ -296,6 +305,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#if-i-want-to-edit-the-github-pages-for-the-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      If I want to edit the github pages for the site:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#project-layout" class="md-nav__link">
     <span class="md-ellipsis">
       Project layout
@@ -328,6 +346,15 @@
 <li><code>mkdocs build</code> - Build the documentation site.</li>
 <li><code>mkdocs -h</code> - Print help message and exit.</li>
 </ul>
+<h2 id="if-i-want-to-edit-the-github-pages-for-the-site">If I want to edit the github pages for the site:</h2>
+<pre><code>gh api \
+  --method PUT \
+  -H &quot;Accept: application/vnd.github+json&quot; \
+  -H &quot;X-GitHub-Api-Version: 2022-11-28&quot; \
+  /repos/Andrewnopoulos/consult/pages \
+  -f &quot;source[branch]=gh-pages&quot; -f &quot;source[path]=/&quot;
+</code></pre>
+<p>Github why you make me do this? I just want to use your UI.</p>
 <h2 id="project-layout">Project layout</h2>
 <pre><code>mkdocs.yml    # The configuration file.
 docs/
